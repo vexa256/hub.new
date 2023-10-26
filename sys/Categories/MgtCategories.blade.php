@@ -7,10 +7,12 @@
                 <h5 class="alert-heading text-uppercase font-weight-bold mb-2">
                     {{ $Title }}</h5>
                 <p class="mb-0 fst-italic">{{ $Desc }}</p>
+               
             </div>
 
             @isset($Categories)
                 <div class="table-responsive">
+                    {{ HeaderBtn($Toggle = 'New', $Class = 'btn-danger m-4', $Label = 'New Cost Input', $Icon = 'fa-plus') }}
                     <table class="table table-hover table-striped">
                         <thead>
                             <tr>

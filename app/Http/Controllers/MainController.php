@@ -28,7 +28,7 @@ class MainController extends Controller
         $Form =  new FormEngine;
 
         $Form = new FormEngine;
-        $rem = ['created_at', 'updated_at', 'id', 'CID'];
+        $rem = ['created_at', 'updated_at', 'id', 'CID', 'Thumbnail'];
 
         $Categories = DB::table('categories')->get();
         $data = [
